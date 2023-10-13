@@ -16,3 +16,25 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+## VSCode 셋팅 요령
+
+가능한 VSCode를 최신 상태로 유지할 것
+
+CMD: Admin
+winget upgrade --id Microsoft.VisualStudioCode
+
+출처: https://wesias7.tistory.com/113
+
+vscode 사용 시 편집기 자체를 조작해야 할 수 있음: 
+타입스크립트 언어와 편집기가 중첩되는 내용 때문
+
+출처: https://lts0606.tistory.com/663
+
+## tsconfig.json 셋팅 요령
+
+"allowSyntheticDefaultImports": true를 컴파일 옵션 단 안에 추가해주기
+
+## 앱 셋팅 요령
+1. npm i --save -D @types/node
+2. vite.config.ts 설정
