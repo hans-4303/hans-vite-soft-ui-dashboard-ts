@@ -1,4 +1,4 @@
-import { createStore, Commit } from "vuex";
+import { createStore } from "vuex";
 import { State } from "../types/storeState.type";
 
 export default createStore<State>({
