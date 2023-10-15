@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import { State } from "../types/storeState.type";
+import { State } from "../types/data/storeState.type";
 
 export default createStore<State>({
   state: {
@@ -51,7 +51,7 @@ export default createStore<State>({
     },
   },
   actions: {
-    toggleSidebarColor({ commit }: { commit: Commit }, payload: string) {
+    toggleSidebarColor({ commit }: { commit: any }, payload: string) {
       commit("sidebarType", payload);
     },
   },

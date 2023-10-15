@@ -25,6 +25,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "noImplicitAny": false,
     "allowJs": true,
     "typeRoots": [
       "./@types",
