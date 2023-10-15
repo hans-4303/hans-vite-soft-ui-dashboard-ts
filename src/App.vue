@@ -1,30 +1,27 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+<template></template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { mapMutations } from "vuex";
+import store from "./store/index";
+
+export default defineComponent({
+  name: "App",
+  computed: {
+    navClasses() {
+      return {
+        "position-sticky blur shadow-blur mt-4 left-auto top-1 z-index-sticky":
+          store.state.isNavFixed,
+        "position-absolute px-4 mx-0 w-100 z-index-2": store.state.isAbsolute,
+        "px-0 mx-4 mt-4": !store.state.isAbsolute,
+      };
+    },
+  },
+  beforeMount() {
+    store.state.isTransparent = "bg-transparent";
+  },
+  method: {
+    ...mapMutations(["toggleConfigurator", "navbarMinimize"]),
+  },
+});
 </script>
-
-<template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
