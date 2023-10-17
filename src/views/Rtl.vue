@@ -1091,7 +1091,7 @@
 import { defineComponent } from "vue";
 
 /* 컴포넌트 호출 */
-import Card from "@/examples/Cards/Card.vue";
+import Card from "@/compounds/Cards/Card.vue";
 import Chart from "chart.js/auto";
 import setTooltip from "@/assets/js/tooltip.js";
 

@@ -73,8 +73,8 @@
 import { defineComponent } from "vue";
 
 /* 컴포넌트 및 이미지 호출 */
-import Navbar from "@/examples/PageLayout/Navbar.vue";
-import AppFooter from "@/examples/PageLayout/Footer.vue";
+import Navbar from "@/compounds/PageLayout/Navbar.vue";
+import AppFooter from "@/compounds/PageLayout/Footer.vue";
 import VsudInput from "@/components/VsudInput.vue";
 import VsudSwitch from "@/components/VsudSwitch.vue";
 import VsudButton from "@/components/VsudButton.vue";

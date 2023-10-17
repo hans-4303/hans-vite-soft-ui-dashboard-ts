@@ -90,14 +90,15 @@
 <script>
 /* 컴포넌트 호출 */
 import VsudButton from "@/components/VsudButton.vue";
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 선언 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "InvoiceCard",
   /* 호출 컴포넌트 */
   components: {
     VsudButton,
   },
-};
+});
 </script>

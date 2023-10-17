@@ -71,7 +71,9 @@
 
 <!-- 컴포넌트 및 props 선언된 스크립트 단 -->
 <script>
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   /* 고유 name */
   name: "OrdersCard",
   /* 컴포넌트 props, 렌더링 시 사용됨
@@ -137,5 +139,5 @@ export default {
       default: ""
     },
   },
-};
+});
 </script>

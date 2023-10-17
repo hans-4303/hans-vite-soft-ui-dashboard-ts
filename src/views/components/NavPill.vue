@@ -49,9 +49,10 @@
 <script>
 /* 함수 호출 */
 import setNavPills from "@/assets/js/nav-pills.js";
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 정의 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "NavPill",
   /* 마운트 됐을 시 */
@@ -59,5 +60,5 @@ export default {
     /* setter 호출 */
     setNavPills();
   },
-};
+});
 </script>

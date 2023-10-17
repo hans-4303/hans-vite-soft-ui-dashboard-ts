@@ -50,9 +50,10 @@
 <script>
 /* 컴포넌트 호출 */
 import bgImg from '@/assets/img/curved-images/curved1.jpg'
+import { defineComponent } from 'vue';
 
 /* 상위 컴포넌트 선언 */
-export default {
+export default defineComponent({
   /* 고유 이름 */
   name: "CardPlayer",
   /* 데이터, 함수 형이며 객체 리턴되어 키 활용 가능 */
@@ -61,5 +62,5 @@ export default {
       bgImg
     }
   },
-};
+});
 </script>

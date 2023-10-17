@@ -50,7 +50,9 @@
 
 <!-- 컴포넌트 선언된 스크립트 단 -->
 <script>
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: "CardMessage",
-};
+});
 </script>

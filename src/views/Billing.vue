@@ -58,8 +58,8 @@ import { defineComponent } from "vue";
 /* 컴포넌트 호출 */
 import setTooltip from "@/assets/js/tooltip.js";
 import NavPill from "./components/NavPill.vue";
-import MasterCard from "@/examples/Cards/MasterCard.vue";
-import DefaultInfoCard from "@/examples/Cards/DefaultInfoCard.vue";
+import MasterCard from "@/compounds/Cards/MasterCard.vue";
+import DefaultInfoCard from "@/compounds/Cards/DefaultInfoCard.vue";
 import PaymentCard from "./components/PaymentCard.vue";
 import InvoiceCard from "./components/InvoiceCard.vue";
 import BillingCard from "./components/BillingCard.vue";

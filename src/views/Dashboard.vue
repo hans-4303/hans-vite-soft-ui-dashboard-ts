@@ -156,9 +156,9 @@
 import { defineComponent } from "vue";
 
 /* 컴포넌트 호출 */
-import Card from "@/examples/Cards/Card.vue";
-import ActiveUsersChart from "@/examples/Charts/ActiveUsersChart.vue";
-import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
+import Card from "@/compounds/Cards/Card.vue";
+import ActiveUsersChart from "@/compounds/Charts/ActiveUsersChart.vue";
+import GradientLineChart from "@/compounds/Charts/GradientLineChart.vue";
 import OrdersCard from "./components/OrdersCard.vue";
 import ProjectsCard from "./components/ProjectsCard.vue";
 import US from "../assets/img/icons/flags/US.png";

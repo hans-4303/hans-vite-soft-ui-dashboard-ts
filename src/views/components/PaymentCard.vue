@@ -62,9 +62,10 @@
 import VsudButton from "@/components/VsudButton.vue";
 import img1 from "../../assets/img/logos/mastercard.png";
 import img2 from "../../assets/img/logos/visa.png";
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 선언 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "PaymentCard",
   /* 호출 컴포넌트 */
@@ -78,5 +79,5 @@ export default {
       img2,
     };
   },
-};
+});
 </script>

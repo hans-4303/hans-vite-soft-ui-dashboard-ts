@@ -485,9 +485,10 @@
 import { defineComponent } from "vue";
 
 /* 컴포넌트 및 이미지 등 호출 */
-import VsudSwitch from "@/components/VsudSwitch.vue";
-import ProfileCard from "./components/ProfileCard.vue";
+import VsudSwitch from "../components/VsudSwitch.vue";
 import VsudAvatar from "../components/VsudAvatar.vue";
+import ProjectsCard from "./components/ProjectOverviewCard.vue";
+import ProfileCard from "./components/ProfileCard.vue";
 import sophie from "@/assets/img/kal-visuals-square.jpg";
 import marie from "@/assets/img/marie.jpg";
 import ivana from "@/assets/img/ivana-square.jpg";
@@ -501,7 +502,6 @@ import team2 from "@/assets/img/team-2.jpg";
 import team3 from "@/assets/img/team-3.jpg";
 import team4 from "@/assets/img/team-4.jpg";
 import bgImg from "@/assets/img/curved-images/curved14.jpg"
-import ProjectsCard from "./components/ProjectOverviewCard.vue";
 
 /* setter 함수 호출 */
 import setNavPills from "@/assets/js/nav-pills.js";

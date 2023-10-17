@@ -58,7 +58,9 @@
 
 <!-- 컴포넌트 및 props 선언된 스크립트 단 -->
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   /* 고유 이름 */
   name: "ProjectsCard",
   /* props 객체
@@ -116,5 +118,5 @@ export default {
       default: ""
     },
   },
-};
+});
 </script>

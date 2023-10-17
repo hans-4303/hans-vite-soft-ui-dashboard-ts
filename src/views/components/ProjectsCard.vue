@@ -433,6 +433,8 @@
 
 <!-- 컴포넌트 및 함수, 이미지 호출하고 상위 컴포넌트 선언하는 스크립트 단 -->
 <script>
+import { defineComponent } from "vue";
+
 /* 함수, 컴포넌트, 이미지 호출 */
 import setTooltip from "@/assets/js/tooltip.js";
 import VsudAvatar from "@/components/VsudAvatar.vue";
@@ -460,7 +462,7 @@ import img20 from "../../assets/img/team-1.jpg";
 import img21 from "../../assets/img/team-4.jpg";
 
 /* 상위 컴포넌트 선언 */
-export default {
+export default defineComponent({
   name: "ProjectsCard",
   components: {
     VsudAvatar,
@@ -496,5 +498,5 @@ export default {
   mounted() {
     setTooltip();
   },
-};
+});
 </script>

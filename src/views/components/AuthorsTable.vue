@@ -226,9 +226,10 @@ import img3 from "../../assets/img/team-4.jpg";
 import img4 from "../../assets/img/team-3.jpg";
 import img5 from "../../assets/img/team-2.jpg";
 import img6 from "../../assets/img/team-4.jpg";
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 정의 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "AuthorsTable",
   /* 호출 컴포넌트 */
@@ -247,5 +248,5 @@ export default {
       img6,
     };
   },
-};
+});
 </script>
