@@ -1,0 +1,65 @@
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+/* 부트스트랩 모음 파일 */
+ 
+// scss-docs-start import-stack
+
+// Configuration
+
+// 함수 + 변수 + 부트스트랩 통합 + 유틸리티
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+
+// 레이아웃 및 배치 컴포넌트
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
+
+// Helpers
+
+// 각종 CSS 통합
+@import "helpers";
+
+// Utilities
+
+// 중단점 등 여러 기준으로 움직이는 유틸리티
+@import "utilities/api";
+
+// scss-docs-end import-stack
