@@ -15,8 +15,10 @@
 </template>
 <!-- 컴포넌트 선언 하는 스크립트 단 -->
 <script>
+import { defineComponent } from "vue";
+
 /* 컴포넌트 선언 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "SidenavCollapse",
   /* props */
@@ -47,5 +49,5 @@ export default {
       isExpanded: false,
     };
   },
-};
+});
 </script>

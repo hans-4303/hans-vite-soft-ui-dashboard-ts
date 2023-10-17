@@ -21,7 +21,9 @@
 
 <!-- 상위 컴포넌트 정의 스크립트 단 -->
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   /* 고유 name */
   name: "DefaultInfoCard",
   /* props 명세 */
@@ -52,5 +54,5 @@ export default {
       default: ""
     },
   },
-};
+});
 </script>

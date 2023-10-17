@@ -32,10 +32,11 @@
 
 <!-- 컴포넌트 호출 및 선언하는 스크립트 단 -->
 <script>
+import { defineComponent } from "vue";
 /* 이미지 호출 */
 import imgWhiteCurved from "../../assets/img/curved-images/white-curved.jpeg";
 /* 상위 컴포넌트 정의 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "SidenavCard",
   /* props 정의 */
@@ -72,5 +73,5 @@ export default {
       imgWhiteCurved,
     };
   },
-};
+});
 </script>

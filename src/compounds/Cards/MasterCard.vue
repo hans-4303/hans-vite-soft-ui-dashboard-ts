@@ -3,8 +3,7 @@
     <div
       class="overflow-hidden position-relative border-radius-xl"
       :style="{
-        backgroundImage:
-          `url(${bgImg})`,
+        backgroundImage: `url(${bgImg})`,
       }"
     >
       <span class="mask bg-gradient-dark"></span>
@@ -46,10 +45,12 @@
 import VsudAvatar from "@/components/VsudAvatar.vue";
 import img from "../../assets/img/curved-images/curved14.jpg";
 import img1 from "../../assets/img/logos/mastercard.png";
-import bgImg from '@/assets/img/curved-images/curved14.jpg';
+import bgImg from "@/assets/img/curved-images/curved14.jpg";
+
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 정의 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "MasterCard",
   /* 호출 컴포넌트 */
@@ -80,8 +81,8 @@ export default {
     return {
       img,
       img1,
-      bgImg
+      bgImg,
     };
   },
-};
+});
 </script>

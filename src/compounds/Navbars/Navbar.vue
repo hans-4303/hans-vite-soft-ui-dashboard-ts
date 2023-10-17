@@ -23,9 +23,7 @@
             <input
               type="text"
               class="form-control"
-              :placeholder="
-                $store.state.isRTL ? 'أكتب هنا...' : 'Type here...'
-              "
+              :placeholder="$store.state.isRTL ? 'أكتب هنا...' : 'Type here...'"
             />
           </div>
         </div>
@@ -36,8 +34,13 @@
               class="px-0 nav-link font-weight-bold"
               :class="textWhite ? textWhite : 'text-body'"
             >
-              <i class="fa fa-user" :class="$store.state.isRTL ? 'ms-sm-2' : 'me-sm-1'"></i>
-              <span v-if="$store.state.isRTL" class="d-sm-inline d-none">يسجل دخول</span>
+              <i
+                class="fa fa-user"
+                :class="$store.state.isRTL ? 'ms-sm-2' : 'me-sm-1'"
+              ></i>
+              <span v-if="$store.state.isRTL" class="d-sm-inline d-none"
+                >يسجل دخول</span
+              >
               <span v-else class="d-sm-inline d-none">Sign In</span>
             </router-link>
           </li>
@@ -138,7 +141,9 @@
               <li>
                 <a class="dropdown-item border-radius-md" href="javascript:;">
                   <div class="py-1 d-flex">
-                    <div class="my-auto avatar avatar-sm bg-gradient-secondary me-3">
+                    <div
+                      class="my-auto avatar avatar-sm bg-gradient-secondary me-3"
+                    >
                       <svg
                         width="12px"
                         height="12px"
@@ -148,7 +153,12 @@
                         xmlns:xlink="http://www.w3.org/1999/xlink"
                       >
                         <title>credit-card</title>
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
                           <g
                             transform="translate(-2169.000000, -745.000000)"
                             fill="#FFFFFF"
@@ -172,7 +182,9 @@
                       </svg>
                     </div>
                     <div class="d-flex flex-column justify-content-center">
-                      <h6 class="mb-1 text-sm font-weight-normal">Payment successfully completed</h6>
+                      <h6 class="mb-1 text-sm font-weight-normal">
+                        Payment successfully completed
+                      </h6>
                       <p class="mb-0 text-xs text-secondary">
                         <i class="fa fa-clock me-1"></i>
                         2 days
@@ -192,12 +204,13 @@
 <!-- 컴포넌트 호출 및 정의하는 스크립트 단 -->
 <script>
 /* 컴포넌트 호출 */
+import { defineComponent } from "vue";
 import Breadcrumbs from "../Breadcrumbs.vue";
 /* store === vuex에서 Mutation과 Action 다루기 위함, methods에 설정 */
 import { mapMutations, mapActions } from "vuex";
 
 /* 상위 컴포넌트 정의 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "NavbarComponent",
   /* 호출 컴포넌트 */
@@ -212,7 +225,7 @@ export default {
     } */
     minNav: {
       type: Function,
-      default: () => { }
+      default: () => {},
     },
     /* [key: String]: {
       type: 데이터 타입들,
@@ -220,7 +233,7 @@ export default {
     } */
     textWhite: {
       type: String,
-      default: ""
+      default: "",
     },
   },
   /* data, 함수 형이며 객체 리턴하고 키는 현 컴포넌트에서 사용 가능 */
@@ -281,5 +294,5 @@ export default {
       this.navbarMinimize();
     },
   },
-};
+});
 </script>

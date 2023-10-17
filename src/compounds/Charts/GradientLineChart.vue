@@ -18,9 +18,10 @@
 <script>
 /* 컴포넌트 호출 */
 import Chart from "chart.js/auto";
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 선언 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "GradientLineChart",
 
@@ -179,5 +180,5 @@ export default {
       },
     });
   },
-};
+});
 </script>

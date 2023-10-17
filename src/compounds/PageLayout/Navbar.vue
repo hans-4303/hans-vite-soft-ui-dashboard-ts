@@ -94,12 +94,14 @@
 
 <!-- 컴포넌트 호출 및 선언하는 스크립트 단 -->
 <script>
+import { defineComponent } from "vue";
+
 /* 이미지 호출 */
 import downArrWhite from "@/assets/img/down-arrow-white.svg";
 import downArrBlack from "@/assets/img/down-arrow-dark.svg";
 
 /* 상위 컴포넌트 선언 */
-export default {
+export default defineComponent({
   /* 고유 name */
   name: "NavbarComponent",
   /* props 선언 */
@@ -143,5 +145,5 @@ export default {
       };
     },
   },
-};
+});
 </script>

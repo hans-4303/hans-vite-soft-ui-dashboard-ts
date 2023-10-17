@@ -231,9 +231,10 @@
 <script>
 /* 컴포넌트 호출 */
 import Chart from "chart.js/auto";
+import { defineComponent } from "vue";
 
 /* 상위 컴포넌트 정의 */
-export default {
+export default defineComponent({
   /* 고유 이름 */
   name: "ActiveUsersChart",
   /* 마운트 됐을 시 */
@@ -326,5 +327,5 @@ export default {
       },
     });
   },
-};
+});
 </script>
