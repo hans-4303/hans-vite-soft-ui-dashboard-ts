@@ -41,12 +41,12 @@
 </template>
 
 <script>
+import { defineComponent } from "vue";
+import { mapMutations } from "vuex";
 import Sidenav from "@/compounds/Sidenav/index.vue";
 import Configurator from "@/compounds/Configurator.vue";
 import Navbar from "@/compounds/Navbars/Navbar.vue";
 import AppFooter from "@/compounds/Footer.vue";
-import { mapMutations } from "vuex";
-import { defineComponent } from "vue";
 
 /* 렌더될 앱 */
 export default defineComponent({
